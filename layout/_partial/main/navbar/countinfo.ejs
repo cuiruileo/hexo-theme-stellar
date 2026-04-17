@@ -9,7 +9,7 @@ function layoutDiv() {
     // 文章字数
     if(theme.wordcount.post_wordcount) {
       el += `<span class="text created">${__("meta.wordcount.prefix")} `
-      el += wordcount(page.content)
+      el += wordcount(page.content, {cn: cnSpeed, en: enSpeed})
       el += ` ${__("meta.wordcount.suffix")}</span>`
     }
     // 阅读时长
